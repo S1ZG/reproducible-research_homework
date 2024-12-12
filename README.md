@@ -11,7 +11,7 @@ The random_walk script produces paths of two random walks. We observe that each 
 
 
 <b>b)</b> 
-<b>Random seeds</b>: 
+<b>Random seeds</b>: Used to generate random numbers but in a reproducible way. Instead of new random numbers being generated each time in a random number generator, the random seed makes it so the same random numbers are generated again. The output of this is a pseudorandom number. This way the same random numbers can be used multiple times which is important for sharing work.
 
 
 <b>c)</b>
