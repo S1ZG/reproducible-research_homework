@@ -2,6 +2,72 @@
 
 \# INSERT ANSWERS HERE #
 
+
+<b>Questions 1-3</b> are in my [logistic_growth repo](https://github.com/S1ZG/logistic_growth).
+
+<b>Question 4</b>
+
+<b>a)</b> 
+The random_walk script produces paths of two random walks. We observe that each walk starts from the coordinates (0,0) and takes place over a time frame from 0 to 500. Both plots of the walks use the same function and inputs but as they are random, they generate diffeent results and there is no link between the two walks. There is no determined coordinate for where the walk ends at time 500, this is random too. The displacement from the start point (0,0) can be in any direction. Many of the walks have overlaps in the route taken. 
+
+
+<b>b)</b> 
+<b>Random seeds</b>: Used to generate random numbers but in a reproducible way. Instead of new random numbers being generated each time in a random number generator, the random seed makes it so the same random numbers are generated again. The output of this is a pseudorandom number. This way the same random numbers can be used multiple times which is important for sharing work.
+
+
+<b>c)</b>
+File is [random_walk.R](https://github.com/S1ZG/reproducible-research_homework/blob/main/question-4-code/random_walk.R) in the question-4-code folder in the repo.
+
+<b>d)</b>
+![](https://github.com/S1ZG/reproducible-research_homework/blob/main/Q4D.png)
+
+
+
+<b>Question 5</b>
+
+<b>a)</b>
+There are 33 rows and 13 columns
+
+<b>b)</b>
+It is best to log transform this equation as it allows us to fit a linear equation:
+**$` log(V) = βlog(L) + log(α)`$**
+To do this I log transformed Viron Volume and Genome Length.
+
+
+<b>c)</b>
+
+![](https://github.com/S1ZG/reproducible-research_homework/blob/main/Q5C.png)
+
+This tells us that:
+
+- $`α`$ = 1.5152.
+- $`ln⁡(β)`$ = 7.0748 . As it was log transformed,  $`β = e^{7.0748} = 1181.8`$
+
+We know they are statistically significant as both have P values < 0.001. They also match the values from Table 2 in the paper which had $`α = 1.52`$ and $`β = 1182`$.
+
+<b>d)</b>
+``` {r}
+   #Replicating the graph
+   ggplot(data = log_ds_data, aes(x = log_GenomeLength, y = log_VironVol)) +
+     geom_point() +
+     geom_smooth(method = "lm") + 
+     labs(x = "Log [Genome Length (kb)]", y = "Log [Viron Volume(nm³)]")
+```
+
+(Also shown in my [Q5 code](https://github.com/S1ZG/reproducible-research_homework/blob/main/question5.R))
+
+</p>
+
+<b>e)</b>
+To estimate the volume, $`V`$, of a 300 kb dsDNA virus we substitute these values into our linear equation from before, $`ln(V)=ln(β)+αln⁡(L)`$. 
+
+This would be $`ln(V) = 7.0748 + (1.5152)(ln(300))`$
+
+And so $`V`$ = 6697007nm³ when genome length is 300kb
+
+
+
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points. First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.
