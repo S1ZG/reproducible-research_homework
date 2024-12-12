@@ -7,10 +7,11 @@
 <b>Question 4</b>
 
 <b>a)</b> 
-The random_walk script produces paths of two random walks. We observe that each walk starts from the coordinates (0,0) and takes place over a time frame from 0 to 500. Both plots of the walks use the same function and inputs but as they are random, they generate diffeent results and there is no link between the two walks. There is no determined coordinate for where the walk ends at time 500, this is random too. 
+The random_walk script produces paths of two random walks. We observe that each walk starts from the coordinates (0,0) and takes place over a time frame from 0 to 500. Both plots of the walks use the same function and inputs but as they are random, they generate diffeent results and there is no link between the two walks. There is no determined coordinate for where the walk ends at time 500, this is random too. The displacement from the start point (0,0) can be in any direction. Many of the walks have overlaps in the route taken. 
 
 
-<b>b)</b>
+<b>b)</b> 
+<b>Random seeds</b>: 
 
 
 <b>c)</b>
