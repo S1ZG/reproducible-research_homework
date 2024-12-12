@@ -2,13 +2,41 @@
 
 \# INSERT ANSWERS HERE #
 
-<b>Questions 1-3</b> are in my [logistic growth repo](https://github.com/S1ZG/logistic_growth).
+<b>Questions 1-3</b> are in my [logistic_growth repo](https://github.com/S1ZG/logistic_growth).
 
 <b>Question 4</b>
+
+<b>a)</b>
+
+
+
+<b>b)</b>
+
+
+<b>c)</b>
+
+
+<b>d)</b>
+
 
 
 
 <b>Question 5</b>
+
+<b>a)</b>
+
+
+<b>b)</b>
+
+
+<b>c)</b>
+
+
+<b>d)</b>
+
+
+<b>e)</b>
+
 
 
 ## Instructions
