@@ -15,10 +15,10 @@ The random_walk script produces paths of two random walks. We observe that each 
 
 
 <b>c)</b>
-
+File is [random_walk.R](https://github.com/S1ZG/reproducible-research_homework/blob/main/question-4-code/random_walk.R) in the question-4-code folder in the repo.
 
 <b>d)</b>
-
+![](https://github.com/S1ZG/reproducible-research_homework/blob/main/Q4D.png)
 
 
 
@@ -35,11 +35,36 @@ To do this I log transformed Viron Volume and Genome Length.
 
 <b>c)</b>
 
+![](https://github.com/S1ZG/reproducible-research_homework/blob/main/Q5C.png)
+
+This tells us that:
+
+- $`α`$ = 1.5152.
+- $`ln⁡(β)`$ = 7.0748 . As it was log transformed,  $`β = e^{7.0748} = 1181.8`$
+
+We know they are statistically significant as both have P values < 0.001. They also match the values from Table 2 in the paper which had $`α = 1.52`$ and $`β = 1182`$.
 
 <b>d)</b>
+``` {r}
+   #Replicating the graph
+   ggplot(data = log_ds_data, aes(x = log_GenomeLength, y = log_VironVol)) +
+     geom_point() +
+     geom_smooth(method = "lm") + 
+     labs(x = "Log [Genome Length (kb)]", y = "Log [Viron Volume(nm³)]")
+```
 
+(Also shown in my [Q5 code](https://github.com/S1ZG/reproducible-research_homework/blob/main/question5.R))
+
+</p>
 
 <b>e)</b>
+To estimate the volume, $`V`$, of a 300 kb dsDNA virus we substitute these values into our linear equation from before, $`ln(V)=ln(β)+αln⁡(L)`$. 
+
+This would be $`ln(V) = 7.0748 + (1.5152)(ln(300))`$
+
+And so $`V`$ = 6697007nm³ when genome length is 300kb
+
+
 
 
 
