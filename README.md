@@ -28,6 +28,9 @@ The random_walk script produces paths of two random walks. We observe that each 
 There are 33 rows and 13 columns
 
 <b>b)</b>
+It is best to log transform this equation as it allows us to fit a linear equation:
+**$` log(V) = βlog(L) + log(α)`$**
+To do this I log transformed Viron Volume and Genome Length.
 
 
 <b>c)</b>
