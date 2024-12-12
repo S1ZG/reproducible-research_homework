@@ -25,7 +25,7 @@ The random_walk script produces paths of two random walks. We observe that each 
 <b>Question 5</b>
 
 <b>a)</b>
-
+There are 33 rows and 13 columns
 
 <b>b)</b>
 
